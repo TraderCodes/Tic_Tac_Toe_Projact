@@ -125,13 +125,13 @@ body{
 .board.circle .cell:not(.x):not(.circle):hover::before{
   width: calc(var(--mark-size) * .9);
   height: calc(var(--mark-size) * .9);
-\
+
 }
 .cell.circle::after,
 .board.circle .cell:not(.x):not(.circle):hover::after{
   width: calc(var(--mark-size) * .7);
   height: calc(var(--mark-size) * .7);
-\
+
 }
 
 .winning-message{
@@ -161,6 +161,7 @@ body{
   padding: 10px 10px;
   cursor: pointer;
   margin-top: 20px;
+  transition: 5s;
 }
 
 .winning-message button:hover{
@@ -168,13 +169,10 @@ body{
   color: rgb(44, 23, 23);
   border:5px solid rgb(250, 41, 41);
   transition: 0.5s;
- 
 }
 
 .winning-message.show{
   display: flex;
-  transition: 2s;
-
 }
 
 
